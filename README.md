@@ -4,35 +4,6 @@ You can use the [editor on GitHub](https://github.com/tylerwatkins101/cs498-visu
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-<!DOCTYPE html>
-<script src="http://d3js.org/d3.v3.min.js"></script>
-<style> .chart rect { fill: steelblue } </style>
-
-<html><body>
-<p>Here are the magic numbers from Lost: <span id="data"></span></p>
-
-<svg class="chart" width="120" height="500">
-    <rect></rect>
-    <rect></rect>
-    <rect></rect>
-    <rect></rect>
-    <rect></rect>
-    <rect></rect>
-</svg>
-
-<script>
-var data = [4,8,15,16,23,42];
-document.getElementById("data").innerHTML = data;
-d3.selectAll("rect")
-	.data(data)
-    .attr("width",19)
-    .attr("height",function(d) { return 10*d; })
-    .attr("x",function(d,i) { return 20*i; })
-    .attr("y",function(d) { return 420 - 10*d; });
-</script>
-
-</body></html>
-
 
 ### Markdown
 
@@ -46,7 +17,6 @@ Syntax highlighted code block
 ## Header 2
 ### Header 3
 
-#### Bold
 
 - Bulleted
 - List
