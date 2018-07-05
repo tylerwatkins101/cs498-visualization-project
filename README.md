@@ -1,35 +1,34 @@
-## Welcome to GitHub Pages
+## Final Project for Data Visualization
 
-You can use the [editor on GitHub](https://github.com/tylerwatkins101/cs498-visualization-project/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The webpage can be viewed at : [Final Project CD 498 - Tyler Watkins](https://tylerwatkins101.github.io/cs498-visualization-project/)
 
 
-### Markdown
+### About the Visualization
 
+The chosen hybrid structure is..
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+The dataset is...
 
-```markdown
-Syntax highlighted code block
+The narrative visualization correctly follows the hybrid structure stated in the essay.
 
-# Header 1
-## Header 2
-### Header 3
+### Scenes
 
+The essay properly discusses the layout and design of the scenes of the narrative visualization.
 
-- Bulleted
-- List
+### Annotations
 
-1. Numbered
-2. List
+The essay properly discusses the application of the annotations of the narrative visualization.
 
-**Bold** and _Italic_ and `Code` text
+### Parameters
 
-[Link](url) and ![Image](src)
-```
+The essay properly discusses the parameters of the narrative visualization, including describing which parameters control the current state of the narrative visualization.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Triggers
+
+The essay properly discusses the triggers, including what user events trigger what parameter value changes, and how the viewer is aware of available user events.
+
+### References
+
 
 ### Jekyll Themes
 
