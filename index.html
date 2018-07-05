@@ -1,15 +1,30 @@
-
 <!DOCTYPE html>
 <style> .chart rect { fill: steelblue } </style>
 
-<html><body><p>Here are the magic numbers from Lost: 4,8,15,16,23,42</p>
+<html><body>
+<p>Here are the magic numbers from Lost: <span id="data"></span></p>
 
-<svg class="chart" width="500" height="500">
-    <rect width="19" height="40" x="0" y="380"></rect>
-    <rect width="19" height="80" x="20" y="340"></rect>
-    <rect width="19" height="150" x="40" y="270"></rect>
-    <rect width="19" height="160" x="60" y="260"></rect>
-    <rect width="19" height="230" x="80" y="190"></rect>
-    <rect width="19" height="420" x="100" y="0"></rect>
+<svg class="chart" width="120" height="500">
+    <rect id="bar-1"></rect>
+    <rect id="bar-2"></rect>
+    <rect id="bar-3"></rect>
+    <rect id="bar-4"></rect>
+    <rect id="bar-5"></rect>
 </svg>
+
+<script>
+var data = [4.8,15,16,23,42];
+document.getElementById("data").innerHTML = data;
+
+for (var i=0; i < data.length; i++) {
+	var id = "bar-" + (i+1);
+	var rectobj = document.getElementById(id);
+    rectobj.setAttribute("width",19);
+    rectobj.setAttribute("height",10*data[i]);
+    rectobj.setAttribute("x",20*i);
+    rectobj.setAttribute("y",+420 - rectobj.getAttribute("height"));
+}
+</script>
+
 </body></html>
+
