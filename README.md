@@ -1,6 +1,6 @@
-## Final Project for Data Visualization
+## Final Project for CS 498 - Data Visualization Course
 
-The webpage can be viewed at : [Final Project CD 498 - Tyler Watkins](https://tylerwatkins101.github.io/cs498-visualization-project/)
+The webpage can be viewed at : [Final Project CS498 - Tyler Watkins](https://tylerwatkins101.github.io/cs498-visualization-project/)
 
 
 ### About the Visualization
