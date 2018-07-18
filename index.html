@@ -14,12 +14,12 @@
 </head>
 <body>
   <div id="container">
-    <h1>Dynamic Annotations in a Visualization Stepper</h1>
-    <h2 class="subtitle">Some information about my website and data visualization</h2>
+    <h1>Final Project for CS 498 - Data Visualization Course</h1>
+    <h2 class="subtitle">Some information about my website and data visualization project</h2>
     <div id="vis-nav">
-      <a href="#" id="step1" class="step-link active">Step1</a>
-      <a href="#" id="step2" class="step-link">Step2</a>
-      <a href="#" id="step3" class="step-link">Step3</a>
+      <a href="#" id="step1" class="step-link active">Viz-Step1</a>
+      <a href="#" id="step2" class="step-link">Viz-Step2</a>
+      <a href="#" id="step3" class="step-link">Viz-Essay</a>
     </div>
     <div id="vis-container">
       <div id="annotation-steps">
@@ -27,7 +27,18 @@
           <div class="annotation" id="step1-left-annotation" >
             <h4>Left Annotation Title</h4>
             <p>Here is the annotation text for the <strong>left</strong> annotation of step 1</p>
-            <script src="https://d3js.org/d3.v3.min.js"></script>
+          </div>
+          <div class="annotation" id="step1-right-annotation" >
+            <h4>Right Annotation Title</h4>
+            <p>Here is the annotation text for the <strong>right</strong> annotation of step 1</p>
+          </div>
+        </div>
+        <div class="annotation-step" id="step2-annotation">
+          <div class="annotation" id="step2-center-annotation" >
+            <h4>Center Annotation Title</h4>
+            <p>Here is the annotation text for the center annotation of step 2.<br/> 
+              We are using absolute positioning of these divs</p>
+		<script src="https://d3js.org/d3.v3.min.js"></script>
 		<style> .chart rect { fill: steelblue } </style>
 
 		<html><body>
@@ -54,17 +65,6 @@
 		</script>
 
 		</body></html>
-          </div>
-          <div class="annotation" id="step1-right-annotation" >
-            <h4>Right Annotation Title</h4>
-            <p>Here is the annotation text for the <strong>right</strong> annotation of step 1</p>
-          </div>
-        </div>
-        <div class="annotation-step" id="step2-annotation">
-          <div class="annotation" id="step2-center-annotation" >
-            <h4>Center Annotation Title</h4>
-            <p>Here is the annotation text for the center annotation of step 2.<br/> 
-              We are using absolute positioning of these divs</p>
           </div>
         </div>
         <div class="annotation-step" id="step3-annotation">
