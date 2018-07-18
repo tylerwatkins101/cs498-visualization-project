@@ -69,6 +69,29 @@
           <div class="annotation" id="step3-high-annotation" >
             <h4>High Annotation Title</h4>
             <p>This is text up high.</p>
+		<style> .chart rect { fill: steelblue } </style>
+
+		<p>Here are some data numbers: <span id="data"></span></p>
+
+		<svg class="chart" width="120" height="500">
+		    <rect></rect>
+		    <rect></rect>
+		    <rect></rect>
+		    <rect></rect>
+		    <rect></rect>
+		    <rect></rect>
+		</svg>
+
+		<script>
+		var data = [4,8,15,16,23,42];
+		document.getElementById("data").innerHTML = data;
+		d3.selectAll("rect")
+			.data(data)
+		    .attr("width",19)
+		    .attr("height",function(d) { return 10*d; })
+		    .attr("x",function(d,i) { return 20*i; })
+		    .attr("y",function(d) { return 420 - 10*d; });
+		</script>
           </div>
           <div class="annotation" id="step3-low-annotation" >
             <h4>Low Annotation Title</h4>
