@@ -53,7 +53,7 @@
 		</svg>
 
 		<script>
-		var data = d3.csv("/data/data_test.csv", function(data) {console.log(data[0])});
+		var data = d3.csv("/data/data_test.csv");
 		document.getElementById("data").innerHTML = data;
 		d3.selectAll("rect")
 			.data(data)
