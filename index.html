@@ -27,30 +27,6 @@
           <div class="annotation" id="step1-left-annotation" >
             <h4>Left Annotation Title</h4>
             <p>Here is the annotation text for the <strong>left</strong> annotation of step 1</p>
-		<script src="https://d3js.org/d3.v3.min.js"></script>
-		<style> .chart rect { fill: steelblue } </style>
-
-		<p>Here are some data numbers: <span id="data"></span></p>
-
-		<svg class="chart" width="120" height="500">
-		    <rect></rect>
-		    <rect></rect>
-		    <rect></rect>
-		    <rect></rect>
-		    <rect></rect>
-		    <rect></rect>
-		</svg>
-
-		<script>
-		var data = [4,8,15,16,23,42];
-		document.getElementById("data").innerHTML = data;
-		d3.selectAll("rect")
-			.data(data)
-		    .attr("width",19)
-		    .attr("height",function(d) { return 10*d; })
-		    .attr("x",function(d,i) { return 20*i; })
-		    .attr("y",function(d) { return 420 - 10*d; });
-		</script>
           </div>
           <div class="annotation" id="step1-right-annotation" >
             <h4>Right Annotation Title</h4>
