@@ -38,14 +38,32 @@
             <h4>Center Annotation Title</h4>
             <p>Here is the annotation text for the center annotation of step 2.<br/> 
               We are using absolute positioning of these divs</p>
-		<script src="//d3js.org/d3.v3.min.js"></script>
-		<script>
-		 d3.csv("https://raw.githubusercontent.com/tylerwatkins101/cs498-visualization-project/master/data/epa2015_test.csv", function(data) {
-			console.log(data);
-		});
-			  
-		</script>
+		  
+		<script src="https://d3js.org/d3.v3.min.js"></script>
+		<style> .chart rect { fill: steelblue } </style>
 
+		<p>Here are the magic numbers from Lost: <span id="data"></span></p>
+
+		<svg class="chart" width="120" height="500">
+		    <rect></rect>
+		    <rect></rect>
+		    <rect></rect>
+		    <rect></rect>
+		    <rect></rect>
+		    <rect></rect>
+		</svg>
+
+		<script>
+		var data = [4,8,15,16,23,42];
+		document.getElementById("data").innerHTML = data;
+		d3.selectAll("rect")
+			.data(data)
+		    .attr("width",19)
+		    .attr("height",function(d) { return 10*d; })
+		    .attr("x",function(d,i) { return 20*i; })
+		    .attr("y",function(d) { return 420 - 10*d; });
+		</script>
+		
           </div>
         </div>
         <div class="annotation-step" id="step3-annotation">
