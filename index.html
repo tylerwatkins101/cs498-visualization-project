@@ -54,9 +54,7 @@
 		</svg>
 
 		<script>
-		d3.csv("https://raw.githubusercontent.com/tylerwatkins101/cs498-visualization-project/master/data/data_test_2.csv", function(data) {
-			console.log(data);
-		});
+		d3.csv("https://raw.githubusercontent.com/tylerwatkins101/cs498-visualization-project/master/data/data_test_2.csv");
 		document.getElementById("data").innerHTML = data;
 		d3.selectAll("rect")
 			.data(data)
