@@ -74,11 +74,10 @@
 
 	</style>
 
-	<script src="//d3js.org/d3.v3.min.js"></script>
 	<script>
 
 	var margin = {top: 20, right: 20, bottom: 30, left: 40},
-	    width = 920 - margin.left - margin.right,
+	    width = 840 - margin.left - margin.right,
 	    height = 500 - margin.top - margin.bottom;
 
 	var x = d3.scale.linear()
@@ -97,7 +96,7 @@
 	    .scale(y)
 	    .orient("left");
 
-	var svg = d3.select("body").append("svg")
+	var svg = d3.select("vis-canvas").append("svg")
 	    .attr("width", width + margin.left + margin.right)
 	    .attr("height", height + margin.top + margin.bottom)
 	  .append("g")
