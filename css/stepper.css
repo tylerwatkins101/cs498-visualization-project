@@ -71,24 +71,17 @@ a.step-link:hover, a.active {
 .annotation {
   position: absolute;
 }
-
-#step1-left-annotation {
-  left: 30px;
-  top: 120px;
-  width: 200px;
-}
  
-#step1-right-annotation {
-  left: 770px;
-  top: 120px;
-  width: 200px;
+#step1-high-annotation {
+  left: 50px;
+  top: 30px;
+  width: 880px;
 }
 
-#step2-center-annotation {
-  left: 290px;
-  top: 40px;
-  width: 400px;
-  text-align: center;
+#step2-high-annotation {
+  left: 50px;
+  top: 30px;
+  width: 880px;
 }
 
 #step3-high-annotation {
@@ -97,10 +90,5 @@ a.step-link:hover, a.active {
   width: 880px;
 }
 
-#step3-low-annotation {
-  left: 730px;
-  top: 550px;
-  width: 200px;
-}
 
 
