@@ -58,7 +58,7 @@ a.step-link:hover, a.active {
   z-index: 10;
   overflow: hidden;
   background-color: #eee;
-}
+
 
 <script src="//d3js.org/d3.v3.min.js"></script>
 		<script>
@@ -153,6 +153,8 @@ a.step-link:hover, a.active {
 		});
 
 		</script>
+}
+
 /* By default, all annotation-steps are hidden. */
 .annotation-step {
   position: absolute;
