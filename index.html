@@ -22,7 +22,42 @@
       <a href="#" id="step3" class="step-link">About the Visualization</a>
     </div>
     <div id="vis-container">
-	    <script src="//d3js.org/d3.v3.min.js"></script>
+      <div id="annotation-steps">
+        <div class="annotation-step" id="step1-annotation" style="display:block;">
+          <div class="annotation" id="step1-high-annotation" >
+            <h4>Viz 1 Annotation Title</h4>
+            <p>Here is the annotation text for Viz 1</p>	  
+          </div>
+         </div>
+        <div class="annotation-step" id="step2-annotation">
+          <div class="annotation" id="step2-high-annotation" >
+	    <h4>Viz 2 Annotation Title</h4>
+		<p>Here is the annotation text for Viz 2</p>
+		
+          </div>
+        </div>
+        <div class="annotation-step" id="step3-annotation">
+          <div class="annotation" id="step3-high-annotation" >
+            <h4>High Annotation Title</h4>
+		<h4>About the Visualization</h4>
+	    	<p>The chosen hybrid structure is..
+		The dataset is...
+		The narrative visualization correctly follows the hybrid structure stated in the essay.</p>
+		<h4>Scenes</h4>
+		<p>The essay properly discusses the layout and design of the scenes of the narrative visualization.</p>
+		<h4>Annotations</h4>
+		<p>The essay properly discusses the application of the annotations of the narrative visualization.</p>
+		<h4>Parameters</h4>
+		<p>The essay properly discusses the parameters of the narrative visualization, including describing which parameters control the current state of the narrative visualization.</p>
+		<h4>Triggers</h4>
+		<p>The essay properly discusses the triggers, including what user events trigger what parameter value changes, and how the viewer is aware of available user events.</p>
+		<h4>References</h4>
+		
+          </div>
+        </div>
+      </div>
+      <div id="vis-canvas">
+	      <script src="//d3js.org/d3.v3.min.js"></script>
 		<script>
 
 		var margin = {top: 20, right: 20, bottom: 30, left: 40},
@@ -116,41 +151,7 @@
 
 		</script>
 	    
-      <div id="annotation-steps">
-        <div class="annotation-step" id="step1-annotation" style="display:block;">
-          <div class="annotation" id="step1-high-annotation" >
-            <h4>Viz 1 Annotation Title</h4>
-            <p>Here is the annotation text for Viz 1</p>	  
-          </div>
-         </div>
-        <div class="annotation-step" id="step2-annotation">
-          <div class="annotation" id="step2-high-annotation" >
-	    <h4>Viz 2 Annotation Title</h4>
-		<p>Here is the annotation text for Viz 2</p>
-		
-          </div>
-        </div>
-        <div class="annotation-step" id="step3-annotation">
-          <div class="annotation" id="step3-high-annotation" >
-            <h4>High Annotation Title</h4>
-		<h4>About the Visualization</h4>
-	    	<p>The chosen hybrid structure is..
-		The dataset is...
-		The narrative visualization correctly follows the hybrid structure stated in the essay.</p>
-		<h4>Scenes</h4>
-		<p>The essay properly discusses the layout and design of the scenes of the narrative visualization.</p>
-		<h4>Annotations</h4>
-		<p>The essay properly discusses the application of the annotations of the narrative visualization.</p>
-		<h4>Parameters</h4>
-		<p>The essay properly discusses the parameters of the narrative visualization, including describing which parameters control the current state of the narrative visualization.</p>
-		<h4>Triggers</h4>
-		<p>The essay properly discusses the triggers, including what user events trigger what parameter value changes, and how the viewer is aware of available user events.</p>
-		<h4>References</h4>
-		
-          </div>
-        </div>
-      </div>
-      <div id="vis-canvas"></div>
+     </div>
     </div>
   </div>
 </body>
