@@ -1,4 +1,7 @@
-## Final Project for CS 498 - Project Essay
+## CS 498 Data Visualization- Project Essay
+#### Summer 2018
+#### Tyler Watkins tylerjw4
+
 
 View visualization by clicking here : [Final Project CS498 - Tyler Watkins](https://tylerwatkins101.github.io/cs498-visualization-project/)
 
