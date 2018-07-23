@@ -119,10 +119,10 @@
 
 	  data.forEach(function(d) {
 	    d.CO2 = +d.CO2;
-	    d.disp = +d.disp;
+	    d.horse = +d.horse;
 	  });
 
-	  x.domain(d3.extent(data, function(d) { return d.disp; })).nice();
+	  x.domain(d3.extent(data, function(d) { return d.horse; })).nice();
 	  y.domain(d3.extent(data, function(d) { return d.CO2; })).nice();
 
 	  svg.append("g")
@@ -134,7 +134,7 @@
 	      .attr("x", width)
 	      .attr("y", -6)
 	      .style("text-anchor", "end")
-	      .text("Vehicle Displacement (cubic inches)");
+	      .text("Rated Horsepower (foot-pounds per second)");
 
 	  svg.append("g")
 	      .attr("class", "y axis")
@@ -145,7 +145,7 @@
 	      .attr("y", 6)
 	      .attr("dy", ".71em")
 	      .style("text-anchor", "end")
-	      .text("CO2 Emissions (g/mi)")
+	      .text("CO2 Emissions (grams per mile)")
 
 	  svg.selectAll(".dot")
 	      .data(data)
