@@ -44,11 +44,11 @@
 	    <h4>Viz 3 Annotation Title</h4>
 		<p>Here is the annotation text for Viz 3</p>
 
-		
           </div>
         </div>
       </div>
-     <div id="vis-canvas">   
+     <div id="vis-canvas"> 
+	     
       <style>
 
 	.axis path,
@@ -141,6 +141,24 @@
 	      .attr("cx", function(d) { return x(d.horse); })
 	      .attr("cy", function(d) { return y(d.CO2); })
 	      .style("fill", function(d) { return color(d.type); });
+	
+	chart.selectAll(".dot")
+		.on("mouseover", function(d){
+        	  d3.selectAll('.dot')
+            	   .filter(function(dot){ 
+                    return (dot.type == d.type) 
+                   })
+                   .transition()
+                   .style("opacity", 1)
+          })
+              .on("mouseout", function(d){
+               d3.selectAll('.dot')
+                .filter(function(dot){ 
+                 return (dot.type == d.type) 
+                })
+                .transition()
+                .style("opacity", 0.1)
+          });
 
 	// Add the Legend
 	  var legend = svg.selectAll(".legend")
