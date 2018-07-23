@@ -27,17 +27,32 @@ Annotations are used to highlight data and direct the user to further investigat
 
 The essay properly discusses the parameters of the narrative visualization, including describing which parameters control the current state of the narrative visualization.
 
+Parameters are used to engage the user in the narrative visualization and further explore the data through filtering. The user has the ability to highlight the data based on vehicle type by clicking the toggle on the upper right corner of the chart. This allows the user to gain more information about the relationship between horsepower and CO2 output based on vehicle type. Clicking the toggle changes the current state of the chart to highlight the data of that selected vehicle type.
+
 ### Triggers
 
 The essay properly discusses the triggers, including what user events trigger what parameter value changes, and how the viewer is aware of available user events.
 
+The triggers utilized are the buttons along the top of the visualization container that indicate to the user how to change scenes. 
+
+The buttons are: "Viz - Scene 1", "Viz - Scene 2", and "About the Visualizaton".
+
+The user event involves clicking one of these buttons.
+
+Affordance is used such that the button that represents the current state of the visualization is displayed with an increased brightness. When the user mouses over the other buttons they become temporarily highlighted which indicates to the user that they may be clicked. 
+
+Upon clicking a button thi triggers a change to the corresponding scene being displayed.
+
+
 ### References
 
+Example of Interative Slideshow from NY Times used as reference:
+https://archive.nytimes.com/www.nytimes.com/interactive/2010/02/02/us/politics/20100201-budget-porcupine-graphic.html
 
-### Jekyll Themes
+Tutorial for building a stepper page used as reference:
+http://vallandingham.me/stepper_steps.html
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/tylerwatkins101/cs498-visualization-project/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+D3 Scatter plot example used as reference:
+http://bl.ocks.org/weiglemc/6185069
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
