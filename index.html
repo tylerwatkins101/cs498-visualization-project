@@ -136,7 +136,6 @@
 	  svg.selectAll(".dot")
 	      .data(data)
 	    .enter().append("circle")
-	    .filter(function(d) { return d.type == "Truck" })
 	      .attr("class", "dot")
 	      .attr("r", 3.5)
 	      .attr("cx", function(d) { return x(d.horse); })
