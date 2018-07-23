@@ -4,7 +4,7 @@ By Tyler Watkins; tylerjw4
 Summer 2018
 
 
-View visualization by clicking here : [Final Project CS498 - Tyler Watkins](https://tylerwatkins101.github.io/cs498-visualization-project/)
+View visualization by clicking here : [Final Project for CS 498 - CO2 Emissions of Vehicles Based on Rated Horsepower](https://tylerwatkins101.github.io/cs498-visualization-project/)
 
 
 ### About the Visualization
