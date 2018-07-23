@@ -23,7 +23,7 @@ There are two distinct scenes in the narrative visualization. They follow the sa
 
 ### Annotations
 
-Annotations are used to highlight data and direct the user to further investigate the data. The annotations use a consistent template for font size and style which is <h4>.
+Annotations are used to highlight data and direct the user to further investigate the data. The annotations use a consistent template for font size and style.
 - The annotation in Scene 1 is text positioned above the data inside the visualization container meant to highlight the primary finding of the visualization. "As Horsepower increases C02 Emissions increase for all vehicle types." When transitioning to Scene 2 the annotation for Scene 1 is cleared.
 - The annotation in Scene 2 is text positioned near the user interface to highlight the possibility of user engagement with the data. If the user wishes to navigate back to Scene 1 the annotation for Scene 2 is cleared.
 
