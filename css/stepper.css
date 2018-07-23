@@ -73,9 +73,9 @@ a.step-link:hover, a.active {
 }
  
 #step1-high-annotation {
-  left: 50px;
-  top: 30px;
-  width: 880px;
+  left: 150px;
+  top: 130px;
+  width: 100px;
 }
 
 #step2-high-annotation {
