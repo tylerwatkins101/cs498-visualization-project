@@ -17,8 +17,9 @@ The visualization is based on a dataset from the Environment Protection Agency w
 
 There are two distinct scenes in the narrative visualization. They follow the same template and layout for visual consistency. 
 - The project title is fixed in place above the visualization container for the duration of the narrative visualization.
-- The visualization container which displays the data and is consistent with height 500px, width 980px, and background color "grey" for the duration of the narrative visualization.
-- The plot axis and legend are consistent for the duration of the narrative visualization.
+- The visualization container which displays the data and is consistent with height 510px, width 980px, and background color "grey" for the duration of the narrative visualization.
+- The plot axis and legend are consistent for the duration of the narrative visualization. The axes are linear and extend the range of the data.
+- The marks are circular and consistent in size and color for the duration of the narrative visualization.
 - The scenes were designed for consistency to keep the viewer from getting disoriented through transitions.
 
 ### Annotations
