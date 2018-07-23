@@ -114,16 +114,16 @@
 	  .append("g")
 	    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-	d3.csv("https://raw.githubusercontent.com/tylerwatkins101/cs498-visualization-project/master/data/epa2015_test.csv", function(error, data) {
+	d3.csv("https://raw.githubusercontent.com/tylerwatkins101/cs498-visualization-project/master/data/epa2015_final.csv", function(error, data) {
 	  if (error) throw error;
 
 	  data.forEach(function(d) {
-	    d.mpg = +d.mpg;
-	    d.horse = +d.horse;
+	    d.CO2 = +d.CO2;
+	    d.disp = +d.disp;
 	  });
 
-	  x.domain(d3.extent(data, function(d) { return d.horse; })).nice();
-	  y.domain(d3.extent(data, function(d) { return d.mpg; })).nice();
+	  x.domain(d3.extent(data, function(d) { return d.disp; })).nice();
+	  y.domain(d3.extent(data, function(d) { return d.CO2; })).nice();
 
 	  svg.append("g")
 	      .attr("class", "x axis")
@@ -134,7 +134,7 @@
 	      .attr("x", width)
 	      .attr("y", -6)
 	      .style("text-anchor", "end")
-	      .text("horsepower");
+	      .text("Vehicle Displacement (cubic inches)");
 
 	  svg.append("g")
 	      .attr("class", "y axis")
@@ -145,15 +145,15 @@
 	      .attr("y", 6)
 	      .attr("dy", ".71em")
 	      .style("text-anchor", "end")
-	      .text("mpg")
+	      .text("CO2 Emissions (g/mi)")
 
 	  svg.selectAll(".dot")
 	      .data(data)
 	    .enter().append("circle")
 	      .attr("class", "dot")
 	      .attr("r", 3.5)
-	      .attr("cx", function(d) { return x(d.horse); })
-	      .attr("cy", function(d) { return y(d.mpg); })
+	      .attr("cx", function(d) { return x(d.disp); })
+	      .attr("cy", function(d) { return y(d.CO2); })
 	      .style("fill", function(d) { return color(d.type); });
 
 	  var legend = svg.selectAll(".legend")
