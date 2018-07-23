@@ -27,6 +27,18 @@ a.step-link:hover, a.active {
   width: 980px;
 }
 
+/* Basic styling for Description link*/
+a.desc-link {
+  padding: 5px;
+  background-color: #444;
+  color: #666;
+  text-decoration: none;
+}
+
+a.desc-link:hover, a.active {
+  color: #ddd;
+}
+
 /* Here is our relatively positioned
  * container div to hold the rest of the
  * visualization */
