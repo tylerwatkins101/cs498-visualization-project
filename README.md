@@ -1,6 +1,6 @@
 ## Final Project for CS 498 - Project Essay
 
-The webpage can be viewed at : [Final Project CS498 - Tyler Watkins](https://tylerwatkins101.github.io/cs498-visualization-project/)
+View visualization by clicking here : [Final Project CS498 - Tyler Watkins](https://tylerwatkins101.github.io/cs498-visualization-project/)
 
 
 ### About the Visualization
