@@ -66,18 +66,20 @@
 
 	<script>
 
+	// Set the dimensions of the canvas / graph
 	var margin = {top: 50, right: 20, bottom: 30, left: 80},
 	    width = 940 - margin.left - margin.right,
 	    height = 500 - margin.top - margin.bottom;
 
+	// Set the ranges
 	var x = d3.scale.linear()
 	    .range([0, width]);
-
 	var y = d3.scale.linear()
 	    .range([height, 0]);
 
 	var color = d3.scale.category10();
 
+	// Define the axes
 	var xAxis = d3.svg.axis()
 	    .scale(x)
 	    .orient("bottom");
@@ -86,12 +88,14 @@
 	    .scale(y)
 	    .orient("left");
 
+	// Add the svg canvas
 	var svg = d3.select("#vis-canvas").append("svg")
 	    .attr("width", width + margin.left + margin.right)
 	    .attr("height", height + margin.top + margin.bottom)
 	  .append("g")
 	    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
+	// Get the data
 	d3.csv("https://raw.githubusercontent.com/tylerwatkins101/cs498-visualization-project/master/data/epa2015_final.csv", function(error, data) {
 	  if (error) throw error;
 
@@ -100,9 +104,11 @@
 	    d.horse = +d.horse;
 	  });
 
+	// Scale the range of the data
 	  x.domain(d3.extent(data, function(d) { return d.horse; })).nice();
 	  y.domain(d3.extent(data, function(d) { return d.CO2; })).nice();
 
+	// Add the X Axis
 	  svg.append("g")
 	      .attr("class", "x axis")
 	      .attr("transform", "translate(0," + height + ")")
@@ -114,6 +120,7 @@
 	      .style("text-anchor", "end")
 	      .text("Rated Horsepower (foot-pounds per second)");
 
+	// Add the Y Axis
 	  svg.append("g")
 	      .attr("class", "y axis")
 	      .call(yAxis)
@@ -125,6 +132,7 @@
 	      .style("text-anchor", "end")
 	      .text("CO2 Emissions (grams per mile)")
 
+	// Add the Scatterplot
 	  svg.selectAll(".dot")
 	      .data(data)
 	    .enter().append("circle")
@@ -135,6 +143,7 @@
 	      .attr("cy", function(d) { return y(d.CO2); })
 	      .style("fill", function(d) { return color(d.type); });
 
+	// Add the Legend
 	  var legend = svg.selectAll(".legend")
 	      .data(color.domain())
 	    .enter().append("g")
