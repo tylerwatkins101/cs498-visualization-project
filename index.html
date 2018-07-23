@@ -140,10 +140,8 @@
 	      .attr("r", 3.5)
 	      .attr("cx", function(d) { return x(d.horse); })
 	      .attr("cy", function(d) { return y(d.CO2); })
-	      .style("fill", function(d) { return color(d.type); });
-	
-	chart.selectAll(".dot")
-		.on("mouseover", function(d){
+	      .style("fill", function(d) { return color(d.type); })
+	      .on("mouseover", function(d){
         	  d3.selectAll('.dot')
             	   .filter(function(dot){ 
                     return (dot.type == d.type) 
