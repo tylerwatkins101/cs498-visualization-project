@@ -1,4 +1,3 @@
-/* This is just to make things look a bit better */
 body {
   font-size: 1.2em;
 }
@@ -39,9 +38,7 @@ a.desc-link:hover, a.active {
   color: #ddd;
 }
 
-/* Here is our relatively positioned
- * container div to hold the rest of the
- * visualization */
+/* Here is our relatively positioned container div to hold the rest of the visualization */
 #vis-container {
   position: relative;
   width: 980px;
@@ -49,9 +46,7 @@ a.desc-link:hover, a.active {
   margin-top: 10px;
 }
 
-/* All the .annotation-step divs are inside
- * #annotation-steps. z-index ensures annotations
- * stay on top of visualization. */
+/* All the .annotation-step divs are inside #annotation-steps. z-index ensures annotations stay on top of visualization. */
 #annotation-steps {
   position: absolute;
   z-index: 40;
@@ -61,8 +56,7 @@ a.desc-link:hover, a.active {
   z-index: 20;
 }
 
-/* This is where you would create the actual visualization.
- * Right now, lets just change the background color. */
+/* Change the background color. */
 #vis-canvas {
   position: absolute;
   width: 100%;
@@ -78,8 +72,7 @@ a.desc-link:hover, a.active {
   display: none;
 }
 
-/* Finally we can position each annotation exactly how
- * we want. */
+/* Finally we can position each annotation exactly how we want. */
 .annotation {
   position: absolute;
 }
@@ -101,12 +94,4 @@ a.desc-link:hover, a.active {
   top: 30px;
   width: 880px;
 }
-
-#step4-high-annotation {
-  left: 50px;
-  top: 30px;
-  width: 880px;
-}
-
-
 
