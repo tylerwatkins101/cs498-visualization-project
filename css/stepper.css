@@ -33,7 +33,7 @@ a.step-link:hover, a.active {
 #vis-container {
   position: relative;
   width: 980px;
-  height: 800px;
+  height: 500px;
   margin-top: 10px;
 }
 
