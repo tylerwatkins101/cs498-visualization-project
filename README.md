@@ -9,45 +9,49 @@ View visualization by clicking here : [Final Project for CS 498 - CO2 Emissions 
 
 ### About the Visualization
 
-The chosen hybrid structure is an Interactive Slideshow. It consists of 2 slides where the reader has the ability to look at the full dataset as well as highlight data based on a categorical variable.
+The chosen hybrid structure is an Interactive Slideshow. It consists of 3 slides where the reader has the ability to look at the full dataset as well as highlight data based on a categorical variable.
 
 The visualization is based on a dataset from the Environment Protection Agency which contains horsepower, CO2 emission and vehicle type information of 4,411 vehicles manufactured in 2015.
 
 ### Scenes
 
-There are two distinct scenes in the narrative visualization. They follow the same template and layout for visual consistency. 
+There are three scenes in the narrative visualization. They follow the same template and layout for visual consistency. 
 - The project title is fixed in place above the visualization container for the duration of the narrative visualization.
 - The visualization container which displays the data and is consistent with height 510px, width 980px, and background color "grey" for the duration of the narrative visualization.
-- The plot axis and legend are consistent for the duration of the narrative visualization. The axes are linear and extend the range of the data.
+- The plot axes and legend are consistent for the duration of the narrative visualization. The axes are linear and extend the range of the data.
 - The marks are circular and consistent in size and color for the duration of the narrative visualization.
 - The scenes were designed for consistency to keep the viewer from getting disoriented through transitions.
-- The order of the scenes were chosen to first highlight the overall trend of the data with an annotation and to then invite the user to explore the data based on a categorical variable.
+- The order of the scenes were chosen to first highlight the overall trend of the data in scene 1, second to explore that trend in scene 2 based on the categorical variable "Vehicle Type" and see that even among different vehicles types the trend is consistent, and finally in scene 3 ask the user to reflect on this trend and perhaps consider it when making his next vehicle purchase.
 
 ### Annotations
 
-Annotations are used to highlight data and direct the user to further investigate the data. The annotations use a consistent template for font size and style.
-- The annotation in Scene 1 is text positioned above the data inside the visualization container meant to highlight the primary finding of the visualization. "As Horsepower increases C02 Emissions increase for all vehicle types." When the user clicks the button to transition to Scene 2 the annotation for Scene 1 is cleared.
-- The annotation in Scene 2 is text positioned near the user interface to highlight the possibility of user engagement with the data. If the user clicks the button to navigate back to Scene 1 the annotation for Scene 2 is cleared.
+Annotations are used to highlight a trend in the data, direct the user to further investigate the data, and ask the user to . The annotations use a consistent template for font size and style.
+- The annotation in Scene 1 is text positioned inside the visualization container meant to highlight the primary finding of the visualization. "As horsepower increases C02 emissions increase for all vehicle types." When the user clicks the button to transition forward to Scene 2 or Scene 3 the annotation for Scene 1 is cleared.
+- The annotation in Scene 2 is text positioned inside the visualization container meant to highlight the possibility of user engagement with the data. The user is invited to mouseover the data to see the trends for Cars, Trucks or SUVs independently. When the user clicks the button to navigate back to Scene 1 or forward to Scene 3 the annotation for Scene 2 is cleared.
+- The annotation in Scene 3 is text positioned inside the visualization container meant to ask the user to reflect on what has been discovered in this narrative visualization and to consider this information when making his next vehicle purchase. When the user clicks the button to navigate back to Scene 1 or to Scene 2 the annotation for Scene 3 is cleared.
 
 ### Parameters
 
-The essay properly discusses the parameters of the narrative visualization, including describing which parameters control the current state of the narrative visualization.
+Parameters are used to engage the user in the narrative visualization and further explore the data. The parameter used in this visualization is the categorical variable "Vehicle Type". The user has the ability to highlight the data based on vehicle type by mousing over any data point belonging to a particular vehicle type. This allows the user to gain more information about the relationship between horsepower and CO2 output, not only as an overall trend, but based on vehicle type (Car, Truck or SUV) as well. 
 
-Parameters are used to engage the user in the narrative visualization and further explore the data through filtering. The user has the ability to highlight the data based on vehicle type by clicking the toggle on the upper right corner of the chart. This allows the user to gain more information about the relationship between horsepower and CO2 output based on vehicle type. The user event of clicking the toggle changes the current state of the chart to highlight the data of that selected vehicle type.
 
 ### Triggers
 
-The essay properly discusses the triggers, including what user events trigger what parameter value changes, and how the viewer is aware of available user events.
-
 The triggers utilized are the buttons along the top of the visualization container that indicate to the user how to change scenes. 
 
-The buttons are: "Viz - Scene 1", "Viz - Scene 2", and "About the Visualizaton".
+The buttons are: "Viz-Scene 1", "Viz-Scene 2", "Viz-Scene-3" and "About the Visualizaton".
 
-The user event involves clicking one of these buttons.
+The user event of clicking one of these buttons changes the current state of the visualization by changing the visualization scene.
 
 Affordance is used such that the button that represents the current state of the visualization is displayed with an increased brightness. When the user mouses over the other buttons they become temporarily highlighted which indicates to the user that they may be clicked. 
 
 Upon clicking a button this triggers a change to the corresponding scene being displayed.
+
+Triggers are also utilized with the data points.
+
+The user event of "mouse over" a data point changes the current state of the chart by applying an opacity of 0.01 to all data not part of the vehicle type that is currently moused over. The user event of "mouse off" changes the current state of the chart by returning the opacity of all data points back to 1.
+
+The capability of user event associated with data mouse over is communicated with an annotation.
 
 
 ### References
@@ -60,5 +64,6 @@ http://vallandingham.me/stepper_steps.html
 
 D3 Scatter plot example used as reference:
 http://bl.ocks.org/weiglemc/6185069
+
 
 
