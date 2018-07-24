@@ -21,18 +21,19 @@ There are two distinct scenes in the narrative visualization. They follow the sa
 - The plot axis and legend are consistent for the duration of the narrative visualization. The axes are linear and extend the range of the data.
 - The marks are circular and consistent in size and color for the duration of the narrative visualization.
 - The scenes were designed for consistency to keep the viewer from getting disoriented through transitions.
+- The order of the scenes were chosen to first highlight the overall trend of the data with an annotation and to then invite the user to explore the data based on a categorical variable.
 
 ### Annotations
 
 Annotations are used to highlight data and direct the user to further investigate the data. The annotations use a consistent template for font size and style.
-- The annotation in Scene 1 is text positioned above the data inside the visualization container meant to highlight the primary finding of the visualization. "As Horsepower increases C02 Emissions increase for all vehicle types." When transitioning to Scene 2 the annotation for Scene 1 is cleared.
-- The annotation in Scene 2 is text positioned near the user interface to highlight the possibility of user engagement with the data. If the user wishes to navigate back to Scene 1 the annotation for Scene 2 is cleared.
+- The annotation in Scene 1 is text positioned above the data inside the visualization container meant to highlight the primary finding of the visualization. "As Horsepower increases C02 Emissions increase for all vehicle types." When the user clicks the button to transition to Scene 2 the annotation for Scene 1 is cleared.
+- The annotation in Scene 2 is text positioned near the user interface to highlight the possibility of user engagement with the data. If the user clicks the button to navigate back to Scene 1 the annotation for Scene 2 is cleared.
 
 ### Parameters
 
 The essay properly discusses the parameters of the narrative visualization, including describing which parameters control the current state of the narrative visualization.
 
-Parameters are used to engage the user in the narrative visualization and further explore the data through filtering. The user has the ability to highlight the data based on vehicle type by clicking the toggle on the upper right corner of the chart. This allows the user to gain more information about the relationship between horsepower and CO2 output based on vehicle type. Clicking the toggle changes the current state of the chart to highlight the data of that selected vehicle type.
+Parameters are used to engage the user in the narrative visualization and further explore the data through filtering. The user has the ability to highlight the data based on vehicle type by clicking the toggle on the upper right corner of the chart. This allows the user to gain more information about the relationship between horsepower and CO2 output based on vehicle type. The user event of clicking the toggle changes the current state of the chart to highlight the data of that selected vehicle type.
 
 ### Triggers
 
@@ -46,7 +47,7 @@ The user event involves clicking one of these buttons.
 
 Affordance is used such that the button that represents the current state of the visualization is displayed with an increased brightness. When the user mouses over the other buttons they become temporarily highlighted which indicates to the user that they may be clicked. 
 
-Upon clicking a button thi triggers a change to the corresponding scene being displayed.
+Upon clicking a button this triggers a change to the corresponding scene being displayed.
 
 
 ### References
