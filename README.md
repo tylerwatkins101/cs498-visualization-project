@@ -32,7 +32,7 @@ Annotations are used to highlight a trend in the data, direct the user to furthe
 
 ### Parameters
 
-Parameters are used to engage the user in the narrative visualization and further explore the data. The parameter used in this visualization is the categorical variable "Vehicle Type". The user has the ability to highlight the data based on vehicle type by mousing over any data point belonging to a particular vehicle type. This allows the user to gain more information about the relationship between horsepower and CO2 output, not only as an overall trend, but based on vehicle type (Car, Truck or SUV) as well. 
+Parameters are used to engage the user in the narrative visualization and further explore the data. The parameter used in this visualization is the categorical variable "Vehicle Type". The user has the ability to examine the data of one vehicle type at a time (Car, Truck or SUV) by mousing over any data point belonging to that particular vehicle type. This allows the user to gain more information about the relationship between horsepower and CO2 output, not only as an overall trend, but based on vehicle type (Car, Truck or SUV) as well. 
 
 
 ### Triggers
