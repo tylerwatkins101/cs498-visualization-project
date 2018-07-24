@@ -21,7 +21,7 @@ There are three scenes in the narrative visualization. They follow the same temp
 - The plot axes and legend are consistent for the duration of the narrative visualization. The axes are linear and extend the range of the data.
 - The marks are circular and consistent in size and color for the duration of the narrative visualization.
 - The scenes were designed for consistency to keep the viewer from getting disoriented through transitions.
-- The order of the scenes were chosen to first highlight the overall trend of the data in scene 1, second to explore that trend in scene 2 based on the categorical variable "Vehicle Type" and see that even among different vehicles types the trend is consistent, and finally in scene 3 ask the user to reflect on this trend and perhaps consider it when making his next vehicle purchase.
+- The order of the scenes were chosen to first highlight the overall trend of the data in scene 1, second to explore that trend in scene 2 based on the categorical variable vehicle "type" and see that even among different vehicles types the trend is consistent, and finally in scene 3 ask the user to reflect on this trend and perhaps consider it when making his next vehicle purchase.
 
 ### Annotations
 
@@ -32,9 +32,9 @@ Annotations are used to highlight a trend in the data, direct the user to furthe
 
 ### Parameters
 
-Parameters are used to engage the user in the narrative visualization and further explore the data. The parameter used in this visualization is the categorical variable "Vehicle Type". The user has the ability to examine the data of one vehicle type at a time (Car, Truck or SUV) by mousing over any data point belonging to that particular vehicle type. This allows the user to gain more information about the relationship between horsepower and CO2 output, not only as an overall trend, but based on vehicle type as well. 
+Parameters are used to engage the user in the narrative visualization and further explore the data. The parameter used in this visualization is the categorical variable vehicle "type". The user has the ability to examine the data of one vehicle type at a time (Car, Truck or SUV) by mousing over any data point belonging to that particular vehicle type. This allows the user to gain more information about the relationship between horsepower and CO2 output, not only as an overall trend, but based on vehicle type as well. 
 
-The current state is controlled by this parameter "Vehicle Type". When mousing over the data point belonging to a particular vehicle type, the current state changes and the data points for data of other vehicle types is set to opacity = 0.01. When mousing off the data point the current state changes again and opacity for all data points returns to 1.
+The current state is controlled by this parameter vehicle "type". When mousing over the data point belonging to a particular vehicle type, the current state changes and the data points for data of other vehicle types is set to opacity = 0.01. When mousing off the data point the current state changes again and opacity for all data points returns to 1.
 
 ### Triggers
 
