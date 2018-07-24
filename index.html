@@ -28,15 +28,14 @@
       <div id="annotation-steps">
         <div class="annotation-step" id="step1-annotation" style="display:block;">
           <div class="annotation" id="step1-high-annotation" >
-            <h4>Notice: as Horsepower increases C02 Emissions increase for all vehicle types.</h4>
+            <h4>Primary Finding: as Horsepower increases C02 Emissions increase for all vehicle types.</h4>
                 		  
           </div>
          </div>
         <div class="annotation-step" id="step2-annotation">
           <div class="annotation" id="step2-high-annotation" >
-	    <h4>Viz 2 Annotation Title</h4>
-		<p>Here is the annotation text for Viz 2</p>
-		
+	    <h4>Mouseover the Data to see the individual trends for Cars, Trucks and SUVs.</h4>
+				
           </div>
         </div>
 	<div class="annotation-step" id="step3-annotation">
@@ -144,18 +143,18 @@
 	      .on("mouseover", function(d){
         	  d3.selectAll('.dot')
             	   .filter(function(dot){ 
-                    return (dot.type == d.type) 
+                    return (dot.type != d.type) 
                    })
                    .transition()
-                   .style("opacity", 1)
+                   .style("opacity", 0.1)
           })
               .on("mouseout", function(d){
                d3.selectAll('.dot')
                 .filter(function(dot){ 
-                 return (dot.type == d.type) 
+                 return (dot.type != d.type) 
                 })
                 .transition()
-                .style("opacity", 0.1)
+                .style("opacity", 1)
           });
 
 	// Add the Legend
