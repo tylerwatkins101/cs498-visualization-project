@@ -32,26 +32,20 @@ Annotations are used to highlight a trend in the data, direct the user to furthe
 
 ### Parameters
 
-Parameters are used to engage the user in the narrative visualization and further explore the data. The parameter used in this visualization is the categorical variable "Vehicle Type". The user has the ability to examine the data of one vehicle type at a time (Car, Truck or SUV) by mousing over any data point belonging to that particular vehicle type. This allows the user to gain more information about the relationship between horsepower and CO2 output, not only as an overall trend, but based on vehicle type (Car, Truck or SUV) as well. 
+Parameters are used to engage the user in the narrative visualization and further explore the data. The parameter used in this visualization is the categorical variable "Vehicle Type". The user has the ability to examine the data of one vehicle type at a time (Car, Truck or SUV) by mousing over any data point belonging to that particular vehicle type. This allows the user to gain more information about the relationship between horsepower and CO2 output, not only as an overall trend, but based on vehicle type as well. 
 
 
 ### Triggers
 
-The triggers utilized are the buttons along the top of the visualization container that indicate to the user how to change scenes. 
+Triggers are utilized in two ways for this visualization.
 
-The buttons are: "Viz-Scene 1", "Viz-Scene 2", "Viz-Scene-3" and "About the Visualizaton".
+The buttons along the top of the visualization container are triggers to change scenes. The buttons are: "Viz-Scene 1", "Viz-Scene 2", "Viz-Scene-3" and "About the Visualizaton".
 
-The user event of clicking one of these buttons changes the current state of the visualization by changing the visualization scene.
-
-Affordance is used such that the button that represents the current state of the visualization is displayed with an increased brightness. When the user mouses over the other buttons they become temporarily highlighted which indicates to the user that they may be clicked. 
-
-Upon clicking a button this triggers a change to the corresponding scene being displayed.
+The user event of clicking one of these buttons changes the current state of the visualization by changing the visualization scene. Affordance is used such that the button that represents the current state of the visualization is displayed with an increased brightness. When the user mouses over the other buttons they become temporarily highlighted which indicates to the user that they may be clicked. Upon clicking a button this triggers a change to the corresponding scene being displayed.
 
 Triggers are also utilized with the data points.
 
-The user event of "mouse over" a data point changes the current state of the chart by applying an opacity of 0.01 to all data not part of the vehicle type that is currently moused over. The user event of "mouse off" changes the current state of the chart by returning the opacity of all data points back to 1.
-
-The capability of user event associated with data mouse over is communicated with an annotation.
+The user event of "mouse over" a data point changes the current state of the chart by applying an opacity of 0.01 to all data not part of the vehicle type that is currently moused over. The user event of "mouse off" changes the current state of the chart by returning the opacity of all data points back to 1. This capability for the user event associated with data mouse over is communicated with an annotation.
 
 
 ### References
